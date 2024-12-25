@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <div class="logo">
+            <span>🍪</span> COOKIES Bakery
+          </div>
+          <nav class="navbar">
+            <a href="index.html" >Home </a>
+            <a href="cookies.html">Cookies</a>
+            <a href="cart.html">🛒 Cart</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign up</a>
+          </nav>
+        </header>
+
+    <main>
+        <section id="cart-items">
+            <div class="cart-item">
+                <img src="Images\classic.jpg" alt="Product Image" class="item-image">
+                <div class="item-details">
+                    <h2 class="item-name">Classic Cookies</h2>
+                    <p class="item-price">50$</p>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn">-</button>
+                        <span class="item-quantity">1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+                <button class="remove-item">Remove</button>
+            </div>
+
+             <div class="cart-item">
+                <img src="Images/choco.jpg" alt="Product Image" class="item-image">
+                <div class="item-details">
+                    <h2 class="item-name">Chocolate Cookies</h2>
+                    <p class="item-price">$60</p>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn">-</button>
+                        <span class="item-quantity">2</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+                <button class="remove-item">Remove</button>
+            </div>
+            </section>
+
+        <aside id="cart-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-item">
+                <span class="summary-label">Subtotal:</span>
+                <span class="summary-value" id="subtotal">$49.98</span>
+            </div>
+            <div class="summary-item">
+                <span class="summary-label">Shipping:</span>
+                <span class="summary-value" id="shipping">$5.00</span>
+            </div>
+            <div class="summary-item">
+                <span class="summary-label">Total:</span>
+                <span class="summary-value" id="total">$54.98</span>
+            </div>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </aside>
+    </main>
+
+  
+    <script src="script.js"></script>
+</body>
+</html>
